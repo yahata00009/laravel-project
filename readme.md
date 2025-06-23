@@ -3,6 +3,7 @@
 ## 概要
 
 dockerを使用してlaravel,Nginx,MySQL,Swagger UIを連携したアプリケーション開発環境。
+wsl2とubuntuを使用。
 
 ## ディレクトリ構成
 
