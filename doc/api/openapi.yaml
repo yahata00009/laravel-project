@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: My Laravel Project API
+  version: 1.0.0
+  description: LaravelプロジェクトのAPI仕様書です。
+
+servers:
+  - url: http://localhost:8080/api
+    description: ローカル開発サーバー
+
+paths:
+  /users:
+    get:
+      summary: ユーザー一覧を取得する
+      tags:
+        - User
+      responses:
+        "200":
+          description: 成功時のレスポンス
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    name:
+                      type: string
+                      example: John Doe
